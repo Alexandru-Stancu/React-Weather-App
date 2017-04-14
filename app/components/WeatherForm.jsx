@@ -6,7 +6,7 @@ var WeatherForm = React.createClass({
         e.preventDefault(); // opreste reloading-ul paginii
         var location = this.refs.location.value; // luam valoare din form input ref="location"
         if (location.length > 0) {
-            this.refs.location.value = '',
+            this.refs.location.value = '';
             this.props.onSearch(location); // apelam functia onSearch pe location
         }
     },
